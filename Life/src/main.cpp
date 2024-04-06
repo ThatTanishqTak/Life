@@ -4,7 +4,7 @@
 int main()
 {
 	InitWindow(windowWidth, windowHeight, "Game Of Life");
-	SetTargetFPS(35);
+	SetTargetFPS(60);
 
 	Grid grid;
 
