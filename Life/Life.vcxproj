@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClInclude Include="dependencies\headers\gameobjects.h" />
     <ClInclude Include="dependencies\headers\globals.h" />
+    <ClInclude Include="dependencies\headers\grid.h" />
     <ClInclude Include="dependencies\raylib\include\raylib.h" />
     <ClInclude Include="dependencies\raylib\include\raymath.h" />
     <ClInclude Include="dependencies\raylib\include\rlgl.h" />
@@ -34,6 +35,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\globals.cpp" />
+    <ClCompile Include="src\grid.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
