@@ -1,8 +1,9 @@
 #include "grid.h"
 
-Grid::Grid() : cellSize(10.0f), rows(static_cast<int>(windowWidth / cellSize)), cols(static_cast<int>(windowHeight / cellSize)), grid(rows, std::vector<int>(cols, 0))
+Grid::Grid() : cellSize(10.0f), rows(static_cast<float>(windowWidth) / cellSize), cols(static_cast<float>(windowHeight) / cellSize), 
+			   grid(static_cast<int>(rows), std::vector<__int64>(static_cast<int>(cols), 0))
 {
-	rectangles = CreateGrid(rows, cols);
+	rectangles = CreateGrid(static_cast<int>(rows), static_cast<int>(cols));
 
 	gameObject.push_back(this);
 }
@@ -18,10 +19,7 @@ void Grid::Update()
 
 }
 
-void Grid::Render()
-{
-	RenderGrid();
-}
+void Grid::Render() { RenderGrid(); }
 
 std::vector<Rectangle> Grid::CreateGrid(int rows, int cols)
 {
