@@ -11,5 +11,4 @@ extern std::list<GameObjects*> gameObject;
 extern const int windowWidth;
 extern const int windowHeight;
 
-
 #endif

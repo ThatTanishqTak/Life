@@ -1,11 +1,12 @@
 #include "grid.h"
 
-Grid::Grid() : cellSize(10.0f), rows(windowWidth / cellSize), cols(windowHeight / cellSize), grid(static_cast<__int64>(rows), std::vector<int>(static_cast<__int64>(cols), 0))
+Grid::Grid() : cellSize(10.0f), rows(static_cast<int>(windowWidth / cellSize)), cols(static_cast<int>(windowHeight / cellSize)), grid(rows, std::vector<int>(cols, 0))
 {
 	rectangles = CreateGrid(rows, cols);
 
 	gameObject.push_back(this);
 }
+
 
 Grid::~Grid()
 {
