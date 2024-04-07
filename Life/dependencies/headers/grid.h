@@ -2,7 +2,6 @@
 #define GRID_H
 
 #include "globals.h"
-#include <vector>
 
 class Grid : public GameObjects
 {

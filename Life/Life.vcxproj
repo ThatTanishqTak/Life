@@ -22,6 +22,7 @@
     <ClInclude Include="dependencies\headers\gameobjects.h" />
     <ClInclude Include="dependencies\headers\globals.h" />
     <ClInclude Include="dependencies\headers\grid.h" />
+    <ClInclude Include="dependencies\headers\player.h" />
     <ClInclude Include="dependencies\raylib\include\raylib.h" />
     <ClInclude Include="dependencies\raylib\include\raymath.h" />
     <ClInclude Include="dependencies\raylib\include\rlgl.h" />
@@ -37,6 +38,7 @@
     <ClCompile Include="src\globals.cpp" />
     <ClCompile Include="src\grid.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\player.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
